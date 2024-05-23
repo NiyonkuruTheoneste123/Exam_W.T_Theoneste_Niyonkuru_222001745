@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Address Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-popup {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .form-popup p {
+        text-align: center;
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Address Form</h1>
+    <form id="addressForm">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <a href="location.php>"><button type="submit">Send</button></a>
+        <a href="home.html" class="button">Back Home</a>
+    </form>
+    <div class="form-popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>Your address has been recorded. <a id="okButton" href="#">OK</a></p>
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('addressForm');
+    const popup = document.getElementById('popup');
+    const okButton = document.getElementById('okButton');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        popup.style.display = 'block';
+    });
+
+    okButton.addEventListener('click', function(event) {
+        popup.style.display = 'none';
+        // Redirect to a specified URL
+        window.location.href = 'location.php';
+    });
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+</script>
+</body>
+</html>

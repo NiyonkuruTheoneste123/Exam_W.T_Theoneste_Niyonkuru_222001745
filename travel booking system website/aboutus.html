@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="sty.css" title="style 1" media="screen, tv, projection, handheld, print" />
+    <link rel="stylesheet" type="text/css" href="stye.css" title="style 1" media="screen, tv, projection, handheld, print" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <img src="./images/logo.jpg" alt="Flight">
+        <a class="class" href="home.html">Home</a>
+        <a class="class" href="aboutus.html">About Us</a>
+        <a class="class" href="contact.html">Contact</a>
+        <div class="dropdown">
+            <a class="class" href="#">Settings</a>
+            <div class="dropdown-content">
+                <a href="profile.php">Profile</a>
+                <a href="account.html">Account</a>
+                <a style="color: red;" href="logout.php">Logout</a>
+            </div>
+        </div>
+        <button class="toggle-headmaster">MENU TABLES</button>
+    </nav>
+</header>
+<ul class="headmaster">
+    <a class="button" href="flight.html">Flights</a>
+    <a class="button" href="hotel.html">Hotels</a>
+    <a class="button" href="hotel_booking.html">Hotel Bookings</a>
+    <a class="button" href="review.php">Reviews</a>
+    <a class="button" href="payment.html">Payments</a>
+    <a class="button" href="location.html">Locations</a>
+    <a class="button" href="amenities.html">Amenities</a>
+    <a class="button" href="flight_booking.html">Flight Bookings</a>
+    <a class="button" href="booking.php">Bookings</a>
+</ul>
+<div class="about" style="font-family: 'Times New Roman'; text-align: center; font-size: 20px;">
+    <div class="animate-text">
+        <h2 style="color: black;">About Our Flight Booking Website</h2>
+        <center><p style="color: WHITE;">Welcome to our flight booking website!<br> We are committed to providing you with the best<br> travel experience possible. Our team works tirelessly<br> to ensure that you find the perfect flight<br> at the best price. Whether you're planning<br><br> a business trip or a family vacation, we've got you<br> covered. With our easy-to-use booking platform, <br>you can quickly find and book your next flight with ease.<br> Thank you for choosing us for your travel needs!</p></center>
+    </div>
+</div>
+
+<center><section>
+    <h2 style="color: blue;">Our Mission</h2>
+    <ul>
+    Seamless<br>
+    Efficient<br>
+    Best price<br>
+    Exceptional customer service<br>
+    Wide range of options<br>
+    Simple booking process<br>
+    Enjoyable experience<br>
+</ul>
+</section>
+
+<section>
+    <h2 style="color: blue;">Our Team</h2>
+<p>Our team is dedicated to providing you with the best possible<br> flight booking experience. With a wealth of experience in the travel<br> industry, we are committed to ensuring that your travel needs are<br> met with professionalism and care. Meet the faces behind our service:</p>
+
+</section></center>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggleButton = document.querySelector('.toggle-headmaster');
+        var headmaster = document.querySelector('.headmaster');
+
+        toggleButton.addEventListener('click', function() {
+            headmaster.style.display = headmaster.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        var exploreMore = document.getElementById('exploreMore');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) { // Change 100 to the desired scroll position
+                exploreMore.style.display = 'none';
+            } else {
+                exploreMore.style.display = 'flex';
+            }
+        });
+    });
+</script>
+<section>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Payment Option</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-option label {
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Choose Payment Option</h1>
+    <div class="payment-option">
+        <input type="radio" id="creditCard" name="payment" value="creditCard">
+        <label for="creditCard">Credit Card</label>
+    </div>
+    <div class="payment-option">
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal">PayPal</label>
+    </div>
+    <div class="payment-option">
+        <input type="radio" id="bankTransfer" name="payment" value="bankTransfer">
+        <label for="bankTransfer">Bank Transfer</label>
+    </div>
+    <a href="#" class="btn" onclick="processPayment(event)">place and proceed to payment info</a>
+    <a href="home.html" class="btn">Back Home</a>
+</div>
+
+<script>
+function processPayment(event) {
+    const selectedPayment = document.querySelector('input[name="payment"]:checked');
+    if (selectedPayment) {
+        if (confirm('You have selected: ' + selectedPayment.value + '. Proceed to payment info?')) {
+            // Redirect user to payment.php
+            window.location.href = 'payment.php';
+        } else {
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+        }
+    } else {
+        alert('Please select a payment option.');
+        event.preventDefault(); // Prevent the default behavior of the anchor tag
+    }
+}
+
+</script>
+</body>
+</html>

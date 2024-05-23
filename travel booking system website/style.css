@@ -1,0 +1,66 @@
+body {
+    background-image: url('./images/photo2.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    background-image: url('./images/photo2.jpg');
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(100, 255, 300, 0.3); /* Semi-transparent white background for the form */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect for the form */
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: darkblue; /* Blue background color for the heading */
+    color: white;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background color for the submit button */
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+a {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+center {
+    margin-top: 20px;
+}

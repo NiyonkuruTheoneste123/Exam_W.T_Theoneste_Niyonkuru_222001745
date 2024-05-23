@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Website</title>
+     <link rel="stylesheet" type="text/css" href="sty.css" title="style 1" media="screen, tv, projection, handheld, print" />
+     <link rel="stylesheet" type="text/css" href="stye.css" title="style 1" media="screen, tv, projection, handheld, print" />
+</head>
+<body>
+<header>
+    <nav>
+        <img src="./images/logo.jpg" alt="Flight">
+        <a class="class" href="home.html">Home</a>
+        <a class="class" href="aboutus.html">About Us</a>
+        <a class="class" href="contact.html">Contact</a>
+        <div class="dropdown">
+            <a class="class" href="#">Settings</a>
+            <div class="dropdown-content">
+                <a href="profile.php">Profile</a>
+                <a href="account.html">Account</a>
+                <a style="color: red;" href="logout.php">Logout</a>
+            </div>
+        </div>
+        <button class="toggle-headmaster">MENU TABLES</button>
+    </nav>
+</header>
+<ul class="headmaster">
+    <a class="button" href="flight.html">Flights</a>
+    <a class="button" href="hotel.html">Hotels</a>
+    <a class="button" href="hotel_booking.html">Hotel Bookings</a>
+    <a class="button" href="review.php">Reviews</a>
+    <a class="button" href="payment.html">Payments</a>
+    <a class="button" href="location.html">Locations</a>
+    <a class="button" href="amenities.html">Amenities</a>
+    <a class="button" href="flight_booking.html">Flight Bookings</a>
+    <a class="button" href="booking.php">Bookings</a>
+</ul>
+
+<div class="welcome" style="font-family: 'Algerian';">
+    <div class="animate-text">
+        <h2 style="color: orange;">Welcome to our Flight Booking Website</h2>
+        <p style="color: orange;">Book your flights and hotels with ease</p>
+        <u><p style="color: chocolate;">Explore our services:</p></u>
+        <ul style="list-style-type: none; padding: 0; font-family: 'Aptos (Body)';">
+            <li>Flight Booking</li><br>
+            <li>Hotel Booking</li><br>
+            <li>Car Rental</li><br>
+            <li>Travel Insurance</li><br>
+            <li>24/7 Customer Support</li><br>
+            <li>And Many more</li><br>
+        </ul>
+    </div>
+    <div class="explore-more" id="exploreMore" style="font-family: 'sans-serif';">
+        <p>Explore More</p>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button type="button" onclick="window.location.href='saerch.php'">Search</button>
+    </div>
+</div>
+<div class="tables">
+    <a href="flight.html" class="table">
+        <img src="./images/flight.jpg" alt="flight">
+        <div class="table-caption">Flights</div>
+        <div class="table-caption">FLIGHT INFORMATION<br>
+        YOU WANT</div>
+    </a>
+    <a href="hotel.html" class="table">
+        <img src="./images/hotel.jpg" alt="hotel">
+        <div class="table-caption">Hotels</div>
+        <div class="table-caption">HOTEL INFORMATION<br>
+        YOU WANT</div>
+    </a>
+    <a href="hotel_booking.html" class="table">
+        <img src="./images/booking.png" alt="booking">
+        <div class="table-caption">Hotel Bookings</div>
+        <div class="table-caption">BOOK HOTEL<br>
+        HERE</div>
+    </a>
+    <a href="review.php" class="table">
+        <img src="./images/review.png" alt="review">
+        <div class="table-caption">Reviews</div>
+        <div class="table-caption">HERE IS REVIEWS</div>
+    </a>
+</div>
+<div class="tables">
+    <a href="payment.html" class="table">
+        <img src="./images/payment.jpg" alt="payment">
+        <div class="table-caption">Payments</div>
+        <div class="table-caption">PROCESS YOUR PAYMENT<br>
+        RIGHT HERE</div>
+    </a>
+    <a href="location.html" class="table">
+        <img src="./images/location.jpg" alt="location">
+        <div class="table-caption">Locations</div>
+        <div class="table-caption">THE DESTINATIONS<br>
+        IS RIGHT HERE</div>
+    </a>
+    <a href="amenities.html" class="table">
+        <img src="./images/amenity.jpg" alt="amenity">
+        <div class="table-caption">Amenities</div>
+        <div class="table-caption">HOTEL AMENITIES<br>
+        EXPLORE THEM HERE</div>
+    </a>
+    <a href="flight_booking.html" class="table">
+        <img src="./images/booking.png" alt="booking">
+        <div class="table-caption">Flight Bookings</div>
+        <div class="table-caption">BOOK A FLIGHT<br>
+        HERE</div>
+    </a>
+</div>
+<div class="tables">
+    <a href="booking.php" class="table">
+        <img src="./images/h booking.jpg" alt="h booking">
+        <div class="table-caption">Bookings</div>
+        <div>READ INFORMATION OF <br>
+        WHATEVER YOU HAVE BOOKED</div>
+    </a>
+    <a href="booking.php" class="table">
+        <img src="./images/h booking.jpg" alt="h booking">
+        <div class="table-caption">Bookings</div>
+        <div>READ INFORMATION OF<br>
+        WHATEVER YOU HAVE BOOKED</div>
+    </a>
+    <a href="booking.php" class="table">
+        <img src="./images/h booking.jpg" alt="h booking">
+        <div class="table-caption">Bookings</div>
+        <div>READ INFORMATION OF<br>
+        WHATEVER YOU HAVE BOOKED</div>
+    </a>
+    <a href="booking.php" class="table">
+        <img src="./images/h booking.jpg" alt="h booking">
+        <div class="table-caption">Bookings</div>
+        <div>READ INFORMATION OF<br>
+        WHATEVER YOU HAVE BOOKED</div>
+    </a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggleButton = document.querySelector('.toggle-headmaster');
+        var headmaster = document.querySelector('.headmaster');
+
+        toggleButton.addEventListener('click', function() {
+            headmaster.style.display = headmaster.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        var exploreMore = document.getElementById('exploreMore');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) { // Change 100 to the desired scroll position
+                exploreMore.style.display = 'none';
+            } else {
+                exploreMore.style.display = 'flex';
+            }
+        });
+    });
+
+function search() {
+    var input = document.getElementById('searchInput').value.toLowerCase(); // Get the search input and convert it to lowercase
+    var tables = document.querySelectorAll('.table'); // Get all table elements
+    tables.forEach(function(table) {
+        var caption = table.querySelector('.table-caption').innerText.toLowerCase(); // Get the caption text and convert it to lowercase
+        var parentLink = table.getAttribute('href').split('/')[1]; // Get the table's parent link (e.g., "flights.html")
+        if (caption.includes(input) || parentLink.includes(input)) { // Check if the caption or parent link contains the search input
+            table.style.display = 'flex'; // Show the table if it matches the search
+        } else {
+            table.style.display = 'none'; // Hide the table if it does not match the search
+        }
+    });
+}
+
+   
+</script>
+</body>
+</html>
