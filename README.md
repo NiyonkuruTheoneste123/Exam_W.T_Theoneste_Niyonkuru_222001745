@@ -2,7 +2,7 @@
 
 Project name: TRAVEL BOOKING SYSTEM
 
-login usernames:              passwords
+login usernames...............passwords
 1. Niyonkuru Theoneste.........a5000
 3. MAHORO CHANY................m2222
 4. urhuye butare...............B1111
